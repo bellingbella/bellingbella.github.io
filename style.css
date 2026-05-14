@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary-color: #fb4444;
+    --panel-color: #ff8686;
+    --not-hovered-color: #fdc7c7; 
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.BombyxDei {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%
+}
+
+.info-table {
+    padding: 20px;
+    width: 50%;
+}
+
+.panel {
+    background-color: var(--panel-color);
+    width: 100%;
+    height: 100%;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab-item {
+    padding: 10px 20px;
+    background-color: var(--not-hovered-color);
+    color:black;
+}
+.selectable {
+    cursor: pointer;
+}
+.selected-tab {
+    border-bottom: none;
+    background-color: var(--panel-color);
+}
+
+.tab-content {
+    display: none;
+}
+
+.content {
+    padding: 20px;
+    color: black;
+    overflow-y: scroll;
+    height: 85%;
+    width: 90%;
+}

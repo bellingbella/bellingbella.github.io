@@ -1,47 +1,60 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="gluon/platform.css"/>
-        <link rel="stylesheet" href="gluon/gluon.css"/>
-        <link rel="stylesheet" href="info/style.css"/>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <title>Tiny Profile about me</title>
+        <link rel="stylesheet" href="./style.css">        
     </head>
     <body>
-        <div class="gluon-container" id="gluonContainer">
-            
-        </div>
-
         <div class="container">
-            <div class="header">
-                <div class="svg-logo"" id="svg-logo-container"></div>
-                <div class="gx-link">
+            <div class="info-table">
+                <div class="panel">
+                    <div class="tabs">
+                        <div class="tab-item">BMB/CL</div>
+                        <div class="tab-item selectable" redirection="home">Home</div>
+                        <div class="tab-item selectable" redirection="contact">Contact me</div>
+                        <div class="tab-item selectable" redirection="donation">Donation</div>
+                    </div>
+                    <div class="content" id="tab_content">
+                        
+                    </div>
+                    
+                    <div class="tab-content tab-route" route="home">
+                            <img src="./assets/the_tiny_spider_i_came_across.jpg" style="width: 100%;"/>
+                            <h2>Introduction</h2>
+                            <p>Hi! I’m Belling Mamak Bella (or Cyberg Lipthoyn either), a person who has curiosity about the world and its aspects :D</p>
+                            <h2>My favorites and stuff</h2>
+                            <p style="font-weight: bold;">Developing Stuff</p>
+                            <p>This is my first favorite stuff and driven by curiosity about how the programs and the softwares works</p>
+
+                            <p style="font-weight: bold;">[Unloved] Animal Loving</p>
+                            <p>Loving animals is my recently developed favorite. However, I do early have an impression about the animals, especially insects or unloved creatures which are hated by most people, such as [jumping] spiders</p>
+                            <p>By the way, The animals I love most is Moths, Jumping spiders (Salticidae) and Bunnies</p>
+
+                            <p style="font-weight: bold;">Drawing</p>
+                            <p>Drawing is also my recently developed hobby; I’m currently practicing drawing. The reason why I do is quietly complicated (not just that I’m curious)</p>
+                            <p>By the way, the left character is drawn(1) by me, I called it “Bombyx Dei” (Silkmoth of god, similar to: Bombyx mori, a tiny domesticated moth :3); this character was impressed by an OC of Boxcutter (@Boxcutter0 on X) which is called “神虫” (“God of Bug”, translated by Google, btw) so that I call him/them “Bombyx Dei” in Neo Latin</p>
+                            <p>(1): I had drawn him in my notebook, then I ported with inkscape</p>
+                    
+                            <p style="font-weight: bold;">Philosophical, Thought Hobby</p>    
+                            <p>In spite of having some thoughts of some problems that I came across or experienced before, I recently have expressed them more clearly. I often think about logic, systems, existential problems and sometimes morality. However, I haven’t developed my perspective consistently and have changed my viewpoint periodically</p>
+                            <p>About politics, Although it is not my cup of tea, I tend to be centrist or whatever. On an economic scale, I support free markets and capitalism; on the social scale, I side with both left and right because I support/accept either some progressive ideologies (such as LGBTQA+, feminism, gender equality, human rights,...) or some traditional ideologies (like traditional values, Christianity-Islam-Judaism, Conservatism...)</p>
+                    </div>
+
+                    <div class="tab-content tab-route" route="contact">
+                            <h3>Contact me under here:</h3>
+                            <p>X / Twitter: <a href="https://x.com/holmoab">@holmoab</a></p><br>
+                            <p>Instagram: <a href="https://www.instagram.com/bellingbella.hl/">@bellingbella.hl</a></p><br>
+                            <p>Github<a href="https://github.com/bellingbella"> @bellingbella</a></p><br>
+                    </div>
+
+                    <div class="tab-content tab-route" route="donation">
+                            <p>There is no wallet available for donation.</p>
+                    </div>
                 </div>
             </div>
-            <div style="height: 200px;width: 0px;"></div>
-            <div class="content">
-                <p>Hi! I'm Belling Mamak Bella, I'm just a stupid programmer and curiousness person. You can contact me below or you can contact/D.M.  me via Discord with this username: @holmo757</p><br>
-                <div class="social-icon">
-                    <button class="btn fa-brands fa-x-twitter" onclick="location.href = 'https://x.com/holmoab'"></button>
-                    <button class="btn fa-brands fa-facebook" onclick="location.href = 'https://www.facebook.com/bellingmamakbella'"></button>
-                    <button class="btn fa-brands fa-facebook" onclick="location.href = 'https://www.facebook.com/b75.hl/'"></button>
-                    <button class="btn fa-brands fa-github" onclick="location.href = 'https://github.com/bellingbella'"></button>
-                </div>
-                <p>For donating, I'm currently using Bitcoin, you can donate/support me via:</p><br>
-                <div class="social-icon">
-                    <button class="btn fa-brands fa-bitcoin" onclick="location.href = 'https://raw.githubusercontent.com/bellingbella/bellingbella.github.io/refs/heads/main/txt/donatingvbtc.txt'"></button>
-                </div>
-            </div>
-
-            <div class="">
-
-            </div>            
+            <img class="BombyxDei" src="./assets/VHJA_Bombyx_Dei.png"/>
         </div>
-        
-        <!--gluon-->
-        <script src="./gluon/setup.js"></script>
-        <script src="./gluon/creature.js"></script>
 
-        <!--info-->
-        <script src="./info/load.js"></script>
+        <script src="./tab-control.js"></script>
     </body>
 </html>
